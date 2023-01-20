@@ -1,4 +1,3 @@
-import "./lib/dayjs";
 import { Header } from "./components/Header";
 import { Summary } from "./components/Summary";
 import "./styles/global.css";

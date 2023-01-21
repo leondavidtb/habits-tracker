@@ -25,11 +25,7 @@ async function run() {
         title: 'Beber 2L água',
         created_at: firstHabitCreationDate,
         weekDays: {
-          create: [
-            { week_day: 1 },
-            { week_day: 2 },
-            { week_day: 3 },
-          ]
+          create: [{ week_day: 1 }, { week_day: 2 }, { week_day: 3 }]
         }
       }
     }),
@@ -40,11 +36,7 @@ async function run() {
         title: 'Exercitar',
         created_at: secondHabitCreationDate,
         weekDays: {
-          create: [
-            { week_day: 3 },
-            { week_day: 4 },
-            { week_day: 5 },
-          ]
+          create: [{ week_day: 3 }, { week_day: 4 }, { week_day: 5 }]
         }
       }
     }),
@@ -60,7 +52,7 @@ async function run() {
             { week_day: 2 },
             { week_day: 3 },
             { week_day: 4 },
-            { week_day: 5 },
+            { week_day: 5 }
           ]
         }
       }
@@ -77,7 +69,7 @@ async function run() {
         date: new Date('2023-01-02T03:00:00.000z'),
         dayHabits: {
           create: {
-            habit_id: firstHabitId,
+            habit_id: firstHabitId
           }
         }
       }
@@ -92,7 +84,7 @@ async function run() {
         date: new Date('2023-01-06T03:00:00.000z'),
         dayHabits: {
           create: {
-            habit_id: firstHabitId,
+            habit_id: firstHabitId
           }
         }
       }
@@ -106,13 +98,10 @@ async function run() {
         /** Wednesday */
         date: new Date('2023-01-04T03:00:00.000z'),
         dayHabits: {
-          create: [
-            { habit_id: firstHabitId },
-            { habit_id: secondHabitId },
-          ]
+          create: [{ habit_id: firstHabitId }, { habit_id: secondHabitId }]
         }
       }
-    }),
+    })
   ])
 }
 
@@ -120,7 +109,7 @@ run()
   .then(async () => {
     await prisma.$disconnect()
   })
-  .catch(async (e) => {
+  .catch(async e => {
     console.error(e)
     await prisma.$disconnect()
     process.exit(1)

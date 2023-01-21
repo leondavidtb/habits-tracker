@@ -10,7 +10,7 @@ export function ProgressBar({ progress = 0 }: Props) {
       <View
         className="h-3 rounded-xl bg-violet-600"
         style={{ width: `${progress}%` }}
-      ></View>
+      />
     </View>
   );
 }

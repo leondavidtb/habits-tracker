@@ -1,6 +1,7 @@
-import dayjs from "dayjs";
 import { useEffect, useState } from "react";
-import { api } from "../lib/axtios";
+import dayjs from "dayjs";
+
+import { api } from "../lib/axios";
 import { generateYearDates } from "../utils/generate-year-dates";
 import { HabitDay } from "./HabitDay";
 

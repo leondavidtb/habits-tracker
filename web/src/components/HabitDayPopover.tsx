@@ -1,8 +1,9 @@
+import { useEffect, useState } from "react";
 import * as Checkbox from "@radix-ui/react-checkbox";
 import dayjs from "dayjs";
 import { Check } from "phosphor-react";
-import { useEffect, useState } from "react";
-import { api } from "../lib/axtios";
+
+import { api } from "../lib/axios";
 
 interface Props {
   date: Date;

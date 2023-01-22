@@ -76,7 +76,7 @@ $ cd habits-tracker/server
 $ npm install
 # Create the .env file in the repository using the sample file .env.example
 # Run the development server
-$ npm run start
+$ npm run dev
 # The app will automatically reload if you change any of the source files.
 ```
 
